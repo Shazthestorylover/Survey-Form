@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <!-- Survey Form Title -->
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+
+    <!-- short description of survey form -->
+    <p id="description">
+      The purpose of this survey form is to collect information on how to improve our website/platform.<br/><br/>
+      
+      Thank you for participating. 
+    </p>
+    
+    <!-- Survey form -->
+    <form id="survey-form">
+      <!-- Name input -->
+      <label for="name" id="name-label">Name</label> <br/>
+      <input id="name" name="name" type="text" placeholder="Enter your name" required /> <br/><br/>
+
+      <!-- Email input -->
+      <label for="email" id="email-label">Email</label> <br/>
+      <input id="email" name="email" type="email" placeholder="Enter your email" pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" required /> <br/><br/>
+
+      <!-- Number input -->
+      <label for="number" id="number-label">Number</label> <br/>
+      <input id="number" type="number" min="13" max="120" placeholder="Enter your number" /> <br/><br/>
+
+      <!-- Select/option input -->
+      <label for="dropdown">Current Role:</label> <br/>
+      <select id="dropdown" name="role">
+        <option value="select">Select a role</option>
+        <option value="student">Student</option>
+        <option value="teacher">Teacher</option>
+        <option value="web-developer">Web Developer</option>
+        <option value="other">Other</option>
+      </select> <br/><br/>
+
+      <!-- Radio Button input -->
+      <p>
+        Would you recommend freeCodeCamp to a friend or colleague?
+      </p>
+      <input id="no" name="radio-btn" type="radio" value="no"   />
+      <label for="no">No</label> <br/>
+
+      <input id="maybe" name="radio-btn" type="radio" value="maybe" />
+      <label for="maybe">Maybe</label> <br/>
+
+      <input id="yes" name="radio-btn" type="radio" value="yes" />
+      <label for="yes" >Yes</label> <br/><br/>
+
+      <!-- Checkbox input -->
+      <p>What do you think can be inproved?</p>
+
+      <input id="opt-1" type="checkbox" value="front-end-projects" />
+      <label for="opt-1">Front-End Projects</label> <br/>
+
+      <input id="opt-2" type="checkbox" value="back-end-projects" />
+      <label for="opt-2">Back-End Projects</label> <br/>
+
+      <input id="opt-3" type="checkbox" value="open-source-community" />
+      <label for="opt-3">Open source community</label> <br/>
+
+      <input id="opt-4" type="checkbox" value="videos" />
+      <label for="opt-4">Videos</label> <br/>
+
+      <input id="opt-5" type="checkbox" value="forums" />
+      <label for="opt-5">Forums</label> <br/><br/>
+
+      <!-- text area input -->
+      <label for="comments">Any ideas for improvements?</label> <br/>
+      <textarea id="comments" name="comments" rows="5" cols="50">
+
+      </textarea> <br/><br/>
+
+      <!-- Submit button -->
+      <input id="submit" type="submit"  value="Submit" />
+
+    </form>
+
+  </body>
+</html>
